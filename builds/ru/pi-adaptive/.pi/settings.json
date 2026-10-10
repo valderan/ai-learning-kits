@@ -1,0 +1,36 @@
+{
+  "guard": {
+    "rules": {
+      "read": "allow",
+      "edit": "ask",
+      "write": "ask",
+      "bash": {
+        "*": "ask",
+        "git status": "allow",
+        "git diff": "allow",
+        "npm test": "allow",
+        "npm run test": "allow",
+        "npm start": "allow",
+        "pnpm test": "allow",
+        "yarn test": "allow",
+        "bun test": "allow",
+        "npx vitest": "allow",
+        "npx jest": "allow",
+        "node": "allow",
+        "python": "allow",
+        "python3": "allow",
+        "pytest": "allow",
+        "go test": "allow",
+        "go run": "allow",
+        "cargo test": "allow",
+        "cargo run": "allow",
+        "dotnet test": "allow",
+        "dotnet run": "allow",
+        "mvn test": "allow",
+        "./mvnw test": "allow",
+        "gradle test": "allow",
+        "./gradlew test": "allow"
+      }
+    }
+  }
+}
