@@ -10,6 +10,8 @@
 | [all-adaptive](builds/ru/all-adaptive/README.md) | агенты, читающие `AGENTS.md` и `.agents/skills/`: Codex, Cursor, Gemini CLI, Copilot/VS Code, OpenCode, pi | `cp builds/ru/all-adaptive/AGENTS.md <проект>/` и `cp -R builds/ru/all-adaptive/.agents <проект>/` |
 | [opencode-adaptive](builds/ru/opencode-adaptive/README.md) | OpenCode 1.x (v1) и 2.x (v2) | `cp -R builds/ru/opencode-adaptive/v1/.opencode <проект>/` |
 
+Те же сборки на английском языке — в [`builds/en/`](builds/en/) (полные копии).
+
 ## Что умеет наставник
 
 - **Подсказки, ревью, отладка, объяснение кода** — `hint-ladder`, `code-review`, `debug-coach`, `explain-code`: минимальная помощь, без готовых решений.
@@ -28,13 +30,17 @@ ai-learning-kits/
 ├── README_en.md       # English version
 ├── LICENSE
 └── builds/
-    └── ru/
+    ├── ru/            # русские сборки
+    │   ├── pi-adaptive/
+    │   ├── all-adaptive/
+    │   └── opencode-adaptive/
+    └── en/            # английские сборки (полные копии)
         ├── pi-adaptive/
         ├── all-adaptive/
         └── opencode-adaptive/
 ```
 
-Планируется: английская версия сборок в `builds/en/` и инсталлятор на Python для macOS, Linux и Windows.
+Планируется: инсталлятор на Python для macOS, Linux и Windows.
 
 ## Требования
 
